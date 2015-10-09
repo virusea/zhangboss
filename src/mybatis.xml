@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">  
+<configuration>
+    
+	<typeAliases>
+		<typeAlias alias="User" type="com.sinaapp.zhangboss.pojo.User"/>
+		<typeAlias alias="WXTextMessage" type="com.sinaapp.zhangboss.pojo.UserTextMessage"/>
+		<typeAlias alias="ChatMessage" type="com.sinaapp.zhangboss.pojo.ChatMessage"/>
+		<typeAlias alias="TermMessage" type="com.sinaapp.zhangboss.pojo.TermMessage"/>
+	</typeAliases>
+	
+	
+	<mappers>
+  		<mapper resource="UserMapper.xml"/>
+  		<mapper resource="WXTextMessageMapper.xml"/>
+  		<mapper resource="ChatMessageMapper.xml"/>
+  		<mapper resource="TermMessageMapper.xml"/>
+	</mappers>
+</configuration>

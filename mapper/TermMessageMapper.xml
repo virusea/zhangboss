@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="TermMessage">
+
+<insert id="inseartTermMessage" parameterType="TermMessage">
+	insert into t_m_${sufixstr} (term,messageid,termtimes)values(#{term},#{messageid},#{termtimes})
+</insert>
+
+<delete id="deleteById" parameterType="TermMessage">
+	delete  from t_m_${sufixstr} where id=#{id}
+</delete>
+
+
+<select id="findByTerm" parameterType="TermMessage" resultMap="TMMap">
+	select * from  t_m_${sufixstr} where term=#{term}
+</select>
+
+
+<resultMap type="TermMessage" id="TMMap">
+	<id property="id" column="id"/>
+	<result property="term" column="term"/>
+	<result property="messageid" column="messageid"/>
+	<result property="termtimes" column="termtimes"/>
+</resultMap>
+
+</mapper>

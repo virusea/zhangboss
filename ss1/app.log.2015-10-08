@@ -1,0 +1,98 @@
+2015-10-08 10:23:27 [main:0] - [ INFO] Root WebApplicationContext: initialization started
+2015-10-08 10:23:27 [main:52] - [ INFO] Refreshing Root WebApplicationContext: startup date [Thu Oct 08 10:23:27 CST 2015]; root of context hierarchy
+2015-10-08 10:23:27 [main:131] - [ INFO] Loading XML bean definitions from URL [file:/E:/workspace/zhangboss/WebContent/WEB-INF/classes/spring.xml]
+2015-10-08 10:23:27 [main:568] - [ INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4b168fa9: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,/zhangboss,weixinController,weixinHelperController,chatMessageDao,termMessageDao,userDao,wxMessageDao,chatMessageService,termMessageService,userService,wxTextMessageService,coreService,sqlSessionFactory,sqlSession,transactionManager,dataSource]; root of factory hierarchy
+2015-10-08 10:23:28 [main:1396] - [ INFO] Root WebApplicationContext: initialization completed in 1390 ms
+2015-10-08 10:23:28 [main:1437] - [ INFO] FrameworkServlet 'springMVC': initialization started
+2015-10-08 10:23:28 [main:1440] - [ INFO] Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Thu Oct 08 10:23:28 CST 2015]; parent: Root WebApplicationContext
+2015-10-08 10:23:28 [main:1440] - [ INFO] Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2015-10-08 10:23:28 [main:1518] - [ INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3336e6b6: defining beans [/zhangboss,weixinController,weixinHelperController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,multipartResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@4b168fa9
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/search] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/search.*] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/search/] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Root mapping to handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/handleupdate] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/handleupdate.*] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/handleupdate/] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/updatepage] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/updatepage.*] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/updatepage/] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/addpage] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/addpage.*] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/addpage/] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/handleinseart] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/handleinseart.*] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/handleinseart/] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/handledelete] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/handledelete.*] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/handledelete/] onto handler '/zhangboss'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/weixin] onto handler 'weixinController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/weixin.*] onto handler 'weixinController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/weixin/] onto handler 'weixinController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/chatwithai] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/chatwithai.*] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/chatwithai/] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/uploadchatfile] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/uploadchatfile.*] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/uploadchatfile/] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/chatwithaipage] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/chatwithaipage.*] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/chatwithaipage/] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/fenci] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/fenci.*] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/fenci/] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1565] - [ INFO] Mapped URL path [/uploadfilepage] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1581] - [ INFO] Mapped URL path [/uploadfilepage.*] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1581] - [ INFO] Mapped URL path [/uploadfilepage/] onto handler 'weixinHelperController'
+2015-10-08 10:23:28 [main:1596] - [ INFO] Hibernate Validator 4.2.0.Final
+2015-10-08 10:23:29 [main:1846] - [ INFO] FrameworkServlet 'springMVC': initialization completed in 407 ms
+2015-10-08 18:05:42 [main:0] - [ INFO] Root WebApplicationContext: initialization started
+2015-10-08 18:05:42 [main:109] - [ INFO] Refreshing Root WebApplicationContext: startup date [Thu Oct 08 18:05:42 CST 2015]; root of context hierarchy
+2015-10-08 18:05:42 [main:193] - [ INFO] Loading XML bean definitions from URL [file:/E:/workspace/zhangboss/WebContent/WEB-INF/classes/spring.xml]
+2015-10-08 18:05:43 [main:973] - [ INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6950ed69: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,/zhangboss,weixinController,weixinHelperController,chatMessageDao,termMessageDao,userDao,wxMessageDao,chatMessageService,termMessageService,userService,wxTextMessageService,coreService,sqlSessionFactory,sqlSession,transactionManager,dataSource]; root of factory hierarchy
+2015-10-08 18:05:46 [main:3589] - [ INFO] Root WebApplicationContext: initialization completed in 3582 ms
+2015-10-08 18:05:46 [main:3645] - [ INFO] FrameworkServlet 'springMVC': initialization started
+2015-10-08 18:05:46 [main:3650] - [ INFO] Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Thu Oct 08 18:05:46 CST 2015]; parent: Root WebApplicationContext
+2015-10-08 18:05:46 [main:3659] - [ INFO] Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2015-10-08 18:05:46 [main:3795] - [ INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@751e664e: defining beans [/zhangboss,weixinController,weixinHelperController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,multipartResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6950ed69
+2015-10-08 18:05:46 [main:3969] - [ INFO] Mapped URL path [/search] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3980] - [ INFO] Mapped URL path [/search.*] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3980] - [ INFO] Mapped URL path [/search/] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3981] - [ INFO] Root mapping to handler '/zhangboss'
+2015-10-08 18:05:46 [main:3982] - [ INFO] Mapped URL path [/handleinseart] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3982] - [ INFO] Mapped URL path [/handleinseart.*] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3983] - [ INFO] Mapped URL path [/handleinseart/] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3986] - [ INFO] Mapped URL path [/updatepage] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3987] - [ INFO] Mapped URL path [/updatepage.*] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3988] - [ INFO] Mapped URL path [/updatepage/] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3988] - [ INFO] Mapped URL path [/addpage] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3989] - [ INFO] Mapped URL path [/addpage.*] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3989] - [ INFO] Mapped URL path [/addpage/] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3990] - [ INFO] Mapped URL path [/handledelete] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3990] - [ INFO] Mapped URL path [/handledelete.*] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3991] - [ INFO] Mapped URL path [/handledelete/] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3991] - [ INFO] Mapped URL path [/handleupdate] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3991] - [ INFO] Mapped URL path [/handleupdate.*] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3992] - [ INFO] Mapped URL path [/handleupdate/] onto handler '/zhangboss'
+2015-10-08 18:05:46 [main:3992] - [ INFO] Mapped URL path [/weixin] onto handler 'weixinController'
+2015-10-08 18:05:46 [main:3993] - [ INFO] Mapped URL path [/weixin.*] onto handler 'weixinController'
+2015-10-08 18:05:46 [main:3993] - [ INFO] Mapped URL path [/weixin/] onto handler 'weixinController'
+2015-10-08 18:05:46 [main:3995] - [ INFO] Mapped URL path [/uploadfilepage] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:3998] - [ INFO] Mapped URL path [/uploadfilepage.*] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:3999] - [ INFO] Mapped URL path [/uploadfilepage/] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:3999] - [ INFO] Mapped URL path [/fenci] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4000] - [ INFO] Mapped URL path [/fenci.*] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4001] - [ INFO] Mapped URL path [/fenci/] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4003] - [ INFO] Mapped URL path [/uploadchatfile] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4004] - [ INFO] Mapped URL path [/uploadchatfile.*] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4004] - [ INFO] Mapped URL path [/uploadchatfile/] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4005] - [ INFO] Mapped URL path [/chatwithai] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4006] - [ INFO] Mapped URL path [/chatwithai.*] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4006] - [ INFO] Mapped URL path [/chatwithai/] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4007] - [ INFO] Mapped URL path [/chatwithaipage] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4007] - [ INFO] Mapped URL path [/chatwithaipage.*] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4007] - [ INFO] Mapped URL path [/chatwithaipage/] onto handler 'weixinHelperController'
+2015-10-08 18:05:46 [main:4039] - [ INFO] Hibernate Validator 4.2.0.Final
+2015-10-08 18:05:47 [main:4621] - [ INFO] FrameworkServlet 'springMVC': initialization completed in 974 ms
+2015-10-08 18:18:24 [486898233@qtp-13326370-0:761802] - [ INFO] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2015-10-08 18:18:24 [486898233@qtp-13326370-0:761842] - [ INFO] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]

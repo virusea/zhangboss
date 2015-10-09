@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ChatMessage">
+
+<insert id="insertMessage" parameterType="ChatMessage">
+	insert into chat_message_${sufixstr} (id,time,people,content,nextContents)values(#{id},#{time},#{people},#{content},#{nextContents})
+</insert>
+
+<delete id="deleteById"  parameterType="ChatMessage">
+	delete  from chat_message_${sufixstr} where id=#{id}
+</delete>
+
+
+
+<select id="findByPeople"  parameterType="ChatMessage" resultMap="CMMap">
+	select * from chat_message_${sufixstr} where people=#{people}
+</select>
+
+
+<select id="findByLimit" parameterType="ChatMessage" resultMap="CMMap">
+	select * from chat_message_${sufixstr}  ORDER BY id  limit ${start},${num} 
+</select>
+
+<select id="findById" parameterType="ChatMessage" resultMap="CMMap">
+	select * from chat_message_${sufixstr} where id=#{id}
+</select>
+
+
+<resultMap type="ChatMessage" id="CMMap">
+	<id property="id" column="id"/>
+	<result property="time" column="time"/>
+	<result property="people" column="people"/>
+	<result property="content" column="content"/>
+	<result property="nextContents" column="nextContents"/>
+</resultMap>
+
+</mapper>

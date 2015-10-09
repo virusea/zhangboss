@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="WXTextMessage">
+
+<insert id="inseartMessage" parameterType="WXTextMessage">
+	insert into wx_text_message (fromuserid,content,delivertime)values(#{fromuserid},#{content},#{delivertime})
+</insert>
+
+<delete id="deleteById" parameterType="long">
+	delete  from wx_text_message where id=#{id}
+</delete>
+
+
+<select id="findById" parameterType="long" resultMap="WXTMMap">
+	select * from wx_text_message where id=#{id}
+</select>
+
+<select id="findByUserId" parameterType="string" resultMap="WXTMMap">
+	select * from wx_text_message where fromuserid=#{fromuserid}
+</select>
+
+
+<select id="findByLimit" parameterType="int" resultMap="WXTMMap">
+	select * from wx_text_message limit 0,#{off}
+</select>
+
+<resultMap type="WXTextMessage" id="WXTMMap">
+	<id property="id" column="id"/>
+	<result property="fromuserid" column="fromuserid"/>
+	<result property="content" column="content"/>
+	<result property="delivertime" column="delivertime"/>
+</resultMap>
+
+</mapper>

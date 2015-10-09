@@ -1,0 +1,8 @@
+/ChatMessageMapper.xml
+/TermMessageMapper.xml
+/UserMapper.xml
+/WXTextMessageMapper.xml
+/com/
+/log4j.properties
+/mybatis.xml
+/spring.xml
